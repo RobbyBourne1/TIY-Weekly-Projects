@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i');
+
+/* font-family: 'Merriweather', serif;
+font-family: 'Roboto', sans-serif; */
+
+/* Font Colors
+
+Background: #F2F1E8
+Text: #131511
+Inline Link: #968772
+Inline Link (Hover): #967343
+Navigation Background: #FFFFFF
+Navigation Text: #2B2F26
+Navigation Text (Hover): #CD5D67
+Navigation Text (Active) #968772
+Button Background: #968772
+Button Background (Hover): #967343
+Button Text: #F2F1E8
+Button Text (Hover): #FFFFFF
+Input Border Bottom: #968772
+Input Border Bottom (Focus): #967343
+
+*/
+.wrapper {
+  font-family: 'Merriweather', serif;
+  color: #131511;
+}
+
+/* Nav Bar CSS Start */
+
+nav ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px 0 #b5afaf;
+}
+
+.logo {
+  height: 40%;
+}
+
+.nav-bar {
+  color: #2B2F26;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 5s;
+}
+
+.nav-bar a {
+  color: #050505;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.nav-bar a:hover{
+  color: #CD5D67;
+}
+
+.nav-bar a:active {
+  color: #968772;
+}
+
+#active {
+  color: #968772;
+}
+
+li:first-child, li:last-child {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+li:nth-child(2), li:nth-child(3), li:nth-child(4) {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Nav Bar CSS END */
+
+/* Footer Start */
+
+footer {
+  color: #F2F1E8;
+  background-color: #2B2F26;
+  height: 4em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em;
+  margin: 0
+}
+
+/* Footer END */
+
+body {
+  background-color: #F2F1E8;
+  padding: 0;
+  margin: 0;
+}
+
+body, HTML {
+  height: 100%;
+}
+
+section {
+  margin: 1em;
+}
+
+/* Index Page CSS START */
+
+.home-text h1 {
+  font-weight: normal;
+  font-size: 3em;
+  margin: 0;
+  padding: .5em;
+}
+
+.home-text h2 {
+  font-weight: lighter;
+  font-size: 1.75em;
+  margin: 0;
+  padding: .5em;
+}
+
+#parent {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: calc(100% - 3em);
+}
+
+#parent img {
+  height: 350px;
+}
+
+.row-1 {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  align-content: space-between;
+  flex-basis: 100%;
+  height: 80%;
+  position: relative;
+  top: 2em;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.img-1 {
+  flex-basis: 60%;
+  margin: .5em;
+}
+
+.img-1 img {
+  order: 1;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.img-1 span {
+  position: relative;
+  bottom: 80px;
+  left: 0;
+  width: auto%;
+  letter-spacing: -1px;
+  color: #F2F1E8;
+  background-color: #2B2F26;
+  padding: .5em;
+}
+
+.img-2 {
+  flex-basis: 20%;
+  margin: .5em;
+}
+
+.img-2 img {
+  order: 2;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.img-2 span {
+  position: relative;
+  bottom: 80px;
+  left: 0;
+  width: auto%;
+  letter-spacing: -1px;
+  color: #F2F1E8;
+  background-color: #2B2F26;
+  padding: .25em;
+}
+
+.img-3 {
+  flex-basis: 20%;
+  margin: .5em;
+}
+
+.img-3 img{
+  order: 3;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.img-3 span {
+  position: relative;
+  bottom: 80px;
+  left: 0;
+  width: auto%;
+  letter-spacing: -1px;
+  color: #F2F1E8;
+  background-color: #2B2F26;
+  padding: .5em;
+}
+
+.row-2 {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  flex-basis: 100%;
+}
+
+.img-4 {
+  flex-basis: 20%;
+  margin: .5em;
+}
+
+.img-4 img {
+  order: 4;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.img-4 span {
+  position: relative;
+  bottom: 80px;
+  left: 0;
+  width: auto%;
+  letter-spacing: -1px;
+  color: #F2F1E8;
+  background-color: #2B2F26;
+  padding: .5em;
+}
+
+.img-5 {
+  flex-basis: 20%;
+  margin: .5em;
+}
+
+.img-5 img {
+  order: 5;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.img-5 span {
+  position: relative;
+  bottom: 70px;
+  left: 0;
+  width: auto%;
+  letter-spacing: -1px;
+  color: #F2F1E8;
+  background-color: #2B2F26;
+  padding: .5em;
+}
+
+.img-6 {
+  flex-basis: 40%;
+  margin: .5em;
+}
+
+.img-6 img {
+  order: 6;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.img-6 span {
+  position: relative;
+  bottom: 70px;
+  left: 0;
+  width: auto%;
+  letter-spacing: -1px;
+  color: #F2F1E8;
+  background-color: #2B2F26;
+  padding: .5em;
+}
+
+.img-7 {
+  flex-basis: 20%;
+  margin: .5em;
+}
+
+.img-7 img {
+  order: 7;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.img-7 span {
+  position: relative;
+  bottom: 70px;
+  left: 0;
+  width: auto%;
+  letter-spacing: -1px;
+  color: #F2F1E8;
+  background-color: #2B2F26;
+  padding: .5em;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+/* Index Page CSS END */
+
+/* About Page CSS START */
+
+.section-1 h1 {
+  font-weight: normal;
+  font-size: 4em;
+  text-align: center;
+}
+
+.opening {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 100%;
+  margin: 1em 2em 1em 2em;
+  padding: 0;
+  background-color: #F2F1E8;
+}
+
+h2 {
+  font-weight: 100;
+  margin: .5em 0;
+}
+
+p {
+  margin: .5em 0;
+  font-weight: lighter;
+}
+
+.birdhouse_parent {
+  margin: 1em 0;
+  line-height: 175%;
+}
+
+#birdhouse {
+  float: left;
+  height: 5em;
+  width: 10em;
+  padding: 0 1em 0 0;
+}
+
+#inline {
+  color: #968772;
+}
+
+#inline:hover {
+  color: #967343;
+}
+
+blockquote {
+  border-left: 1px solid #968772;
+  font-style: italic;
+  font-weight: 100;
+  padding: 1.5em;
+  margin: 0;
+}
+
+.RTG {
+  margin: 1em 0;
+  padding: 5em;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  background-image: url(images/background-3.jpg);
+  height: 100px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.closing {
+  margin: 1em 2em 1em 2em;
+  padding: 0;
+}
+
+.closing_1 {
+  display: flex;
+  flex-basis: 100%;
+  margin: 1em 3em 1em 0;
+  padding: 0;
+}
+
+.closing_1 > p {
+  flex-basis: 75%;
+}
+
+.pic-caption {
+  flex-basis: 20%;
+}
+
+#pottery {
+  width: 100%;
+  height: 60%;
+}
+
+.caption {
+  padding: 0;
+  font-weight: lighter;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  border: 1px solid #131511;
+}
+
+th {
+  border: 1px solid #131511;
+  padding: 2%;
+  background-color: #F2F1E8;
+}
+
+thead tr td {
+  border: 1px solid #131511;
+  color: #131511;
+  padding: 15px;
+}
+
+tbody tr td {
+  border: 1px solid #131511;
+  padding: 15px;
+}
+
+tr:nth-child(odd) {
+  background-color: #EAF2DC;
+}
+
+/* About Page CSS END */
+
+/* Newsletter CSS START */
+
+.newsletter {
+  background-image: url(images/background-2.jpg);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  margin: 10em 15em 15em 15em;
+  padding: 4em 3em 4em 3em;
+}
+
+.legend-1 {
+  font-size: 1.5em;
+  display: flex;
+  text-align: center;
+  font-weight: lighter;
+  width: 100%;
+  padding: .5em;
+}
+
+.legend-2 {
+  font-size: 1em;
+  display: flex;
+  text-align: center;
+  font-weight: normal;
+  width: 100%;
+  padding: .5em;
+}
+
+#nameInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #968772;
+  margin: 2em 0 2em 0;
+  font-size: 1em;
+}
+
+#emailInput {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #968772;
+  margin: 2em 0 2em 0;
+  font-size: 1em;
+}
+
+#signupButton {
+  background-color: #968772;
+   border: none;
+   color: #FFFFFF;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 2em 0 0 0;
+   transition-property: background;
+   transition-duration: 1s;
+}
+
+#signupButton:hover {
+  color: #FFFFFF;
+  background-color: #967343;
+}
+
+/*Newsletter CSS END */
